@@ -1,0 +1,260 @@
+/* 基本樣式 */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dfd4c8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: left;
+    padding-top: 70px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #800030;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  h2 {
+    color: #333;
+    margin:20px 50px 30px ;
+    font-size: 25px;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section:not(.hidden) {
+    display: block;
+  }
+  
+  button {
+
+    background-color: rgba(255, 255, 255, 0.47);
+    color: rgb(64, 61, 61);
+    border: none;
+    border-radius: 100px;
+    cursor:pointer;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    height: 40px;
+  }
+  
+  button:hover {
+    border-color: #800030;
+    border: 1px solid #8a1616;
+    color: #802c2c;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* 選項卡樣式 */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .option-card {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.47);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 16px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .option-card.selected {
+    border-color: #800030;
+  }
+  
+  .option-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .option-label {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  
+  /* 總額和選項明細樣式 */
+  .summary {
+    background-color: #f9f9f9;
+    padding:50px 200px 50px 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 0.8cm;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  
+  .total {
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .option-card.selected {
+    border-color: #800030;
+    border-style: outset;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #80002f47;
+    background-color:rgba(255, 255, 255, 0.5);
+  }
+
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+    font-size: 16px;
+  }
+  
+  .item-label {
+    text-align: left;
+  }
+  
+  .item-price {
+    text-align: right;
+    color: #444;
+    font-weight: bold;
+  }
+  .total {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  *{
+    margin:0px;
+    padding:0px;
+}
+  .header{
+
+    margin: 0%;
+    background-attachment:inherit;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+
+  .header a{
+    color:rgb(11, 11, 11);
+    text-decoration: none;
+}
+
+
+
+.navbar{
+    width: 1500px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 78px;
+}
+
+.logo{
+    color: #2b2b2bcf;
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-style: italic;
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu{
+    width: 400px;
+    float:left;
+    height: 70px;
+    margin-left: 890px;
+}
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.menu a:hover{
+    color: #969696;
+}
+
+.menu ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #4d4d4dcf;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.4s ease-in-out;
+    font-size: 14px;
+
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+    color: #838383cf;
+}

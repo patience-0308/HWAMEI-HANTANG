@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旗袍訂製網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+        <div class="icon">
+            <div class="menu" >
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="file:///Users/joanpai/Documents/python/HTML/report/report.html#">Gallery</a></li>
+                    <li><a href="index.html">Custom Qipao</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+
+      
+  <h1>Custom-made Cheongsam</h1>
+  <form id="customForm">
+    <div class="section" id="step1">
+      <h2>1. Fit Options</h2>
+      <div class="options-container">
+        <div class="option-card" data-name="gender" data-value="0" data-label="Women's Fit">
+          <img src="assets/img_3958.jpg" alt="Women's Fit">
+          <div class="option-label"><h2>Women's Fit</h2>The traditional women’s qipao (also known as cheongsam)<br> is known for its elegant silhouette, high collar, and body-hugging design that <br>highlights feminine curves. <br>Available in both long and short styles, <br>it is often worn for weddings, formal events, <br>or as a statement of cultural pride.<br></div>
+        </div>
+        <div class="option-card" data-name="gender" data-value="0" data-label="Men's Fit">
+          <img src="assets/img3957.jpg" alt="Men's Fit">
+          <div class="option-label" ><h2>Men's Fit</h2>The men's qipao, also referred to as <br>a changshan or long robe, <br>is a dignified and refined garment traditionally worn with<br> a mandarin jacket or vest. <br>It features a straight, <br>loose-fitting cut with subtle detailing,<br> embodying a sense of calm strength and cultural heritage <br>— perfect for ceremonies, cultural events, <br>or formal attire with a unique touch.</div>
+        </div>
+      </div>
+      <button type="button" onclick="nextStep(2)">next</button>
+    </div>
+
+    <div class="section hidden" id="step2">
+      <h2>2. Length</h2>
+      <div class="options-container">
+        <div class="option-card" data-name="length" data-value="0" data-label="Long">
+          <img src="assets/blank.jpg" alt="Long">
+          <div class="option-label" ><h2>Long</h2>Elegant and graceful, the long qipao <br>(also known as the full-length qipao)
+            is a timeless classic that exudes sophistication. <br>Its elongated silhouette enhances 
+            the natural curves of the body <br>and creates a poised, <br>statuesque look — perfect 
+            for formal occasions <br>such as weddings, banquets, or cultural celebrations.</div>
+        </div>
+        <div class="option-card" data-name="length" data-value="0" data-label="Short">
+          <img src="assets/blank.jpg" alt="Short" >
+          <div class="option-label"><h2>Short</h2>Chic and modern, <br>the short qipao offers a playful twist on tradition. <br>
+            With a hemline above the knee or mid-thigh, <br>it provides ease of movement <br>and a youthful charm, 
+            <br>making it ideal for semi-formal events, parties, <br>or casual gatherings while still <br>
+            showcasing classic Chinese elegance.</div>
+        </div>  
+      </div>
+      <button type="button" onclick="previousStep(2)">back</button>
+      <button type="button" onclick="nextStep(3)">next</button>
+    </div>
+
+    <div class="section hidden" id="step3">
+      <h2>3. Sleeve Options</h2>
+      <div class="options-container">
+        <div class="option-card" data-name="sleeve" data-value="0" data-label="Sleeveless">
+          <img src="assets/blank.jpg" alt="Sleeveless">
+          <div class="option-label"><h2>Sleeveless</h2>A refined sleeveless <br>design that highlights the neckline and shoulders. <br>Ideal for spring and summer, <br>offering a fresh yet confident look.</div>
+        </div>
+        <div class="option-card" data-name="sleeve" data-value="0" data-label="Cap Sleeve" >
+          <img src="assets/blank.jpg" alt="Cap Sleeve" >
+          <div class="option-label" ><h2>Cap Sleeve</h2>Gracefully covering just the top of the shoulders, <br>cap sleeves soften the silhouette <br>and express subtle elegance in true Eastern style.</div>
+        </div>
+        <div class="option-card" data-name="sleeve" data-value="0" data-label="Long Sleeve">
+          <img src="assets/blank.jpg" alt="Long Sleeve" >
+          <div class="option-label" ><h2>Long Sleeve (sleeve length customizable)</h2>A classic long sleeve for a timeless, <br>graceful appearance—perfect for formal occasions <br>or seasonal transitions. <br>Sleeve length can be customized upon request.</div>
+        </div>
+      </div>
+      <button type="button" onclick="previousStep(3)">back</button>
+      <button type="button" onclick="nextStep(4)">next</button>
+    </div>
+
+    <div class="section hidden" id="step4">
+      <h2>4. Collar Style Options</h2>
+      <div class="options-container">
+        <div class="option-card" data-name="collar" data-value="0" data-label="Straight Collar (Zhijin)">
+          <img src="assets/blank.jpg" alt="Straight Collar (Zhijin)">
+          <div class="option-label"><h2>Straight Collar (Zhijin)</h2>A classic, <br>upright collar that extends vertically <br>from the neckline. <br>Clean and elegant, it’s one of the most <br>traditional qipao styles.</div>
+        </div>
+        <div class="option-card" data-name="collar" data-value="0" data-label="Round Collar (Yuanjin)">
+          <img src="assets/blank.jpg" alt="Round Collar (Yuanjin)">
+          <div class="option-label"><h2>Round Collar (Yuanjin)</h2>Round Collar (Yuanjin)A gently curved neckline <br>that softens the look of the qipao. <br>Feminine and refined, it offers a more relaxed, <br>graceful silhouette.</div>
+        </div>
+        <div class="option-card" data-name="collar" data-value="0" data-label="Small Round Collar (Xiao Yuanjin)">
+          <img src="assets/blank.jpg" alt="Small Round Collar (Xiao Yuanjin)">
+          <div class="option-label"><h2>Small Round Collar (Xiao Yuanjin)</h2>A lower, subtler version <br>of the round collar. <br>It adds a delicate touch while maintaining traditional elegance <br>— perfect for a modern classic look.</div>
+        </div>
+        <div class="option-card" data-name="collar" data-value="0" data-label="Double Round Collar (Shuang Yuanjin)">
+          <img src="assets/blank.jpg" alt="Double Round Collar (Shuang Yuanjin)">
+          <div class="option-label"><h2>Double Round Collar (Shuang Yuanjin)</h2>A distinctive style featuring <br>two layered round collars, <br>often symbolic and ornate. <br>It adds visual depth and a unique vintage charm.</div>
+        </div>
+        <div class="option-card" data-name="collar" data-value="0" data-label="Pipa Collar (Pipa Jin)">
+          <img src="assets/blank.jpg" alt="Pipa Collar (Pipa Jin)">
+          <div class="option-label"><h2>Pipa Collar (Pipa Jin)</h2>Inspired by the traditional Chinese lute (pipa), <br>this asymmetrical collar extends diagonally across the chest. <br>Artistic and stylish, <br>it reflects both cultural richness <br>and individuality.</div>
+        </div>
+
+      </div>
+      <button type="button" onclick="previousStep(4)">back</button>
+      <button type="button" onclick="nextStep(5)">next</button>
+    </div>
+
+    <div class="section hidden" id="step5">
+      <h2>5. Piping Design</h2>
+     <h3 style="text-align: center;">long length</h3>
+      <div class="options-container">
+        <div class="option-card" data-name="piping" data-value="1400" data-label="Full Single-Color Piping" >
+          <img src="assets/blank.jpg" alt="Full Single-Color Piping">
+          <div class="option-label"><h2>Full Single-Color Piping</h2>Single-color piping that traces the full silhouette <br>of the qipao. <br>Elegant and cohesive, <br>it enhances the garment’s structure and graceful lines.<br><br>price : + $ 1400 NTD</div>
+        </div>
+        <div class="option-card" data-name="piping" data-value="4800" data-label="Full Dual-Color Piping" >
+          <img src="assets/blank.jpg" alt="Full Dual-Color Piping">
+          <div class="option-label"><h2>Full Dual-Color Piping</h2>Full-length piping in dual colors, <br>creating bold contrast and rich dimension. <br>A perfect blend of traditional craftsmanship <br>and contemporary style.<br><br>price : + $ 4800 NTD</div>
+        </div>
+     <h3>short length</h3>
+        <div class="option-card" data-name="piping" data-value="1200" data-label="Single-Color Piping">
+          <img src="assets/blank.jpg" alt="Single-Color Piping">
+          <div class="option-label"><h2>Short Single-Color Piping</h2>Subtle yet refined, <br>single-color piping outlines the silhouette with tonal elegance, <br>creating a clean and graceful finish.<br><br>price : + $ 1200 NTD</div>
+        </div>
+        <div class="option-card" data-name="piping" data-value="2400" data-label="Dual-Color Piping" >
+          <img src="assets/blank.jpg" alt="Dual-Color Piping">
+          <div class="option-label"><h2>Short Dual-Color Piping</h2>Minimalist single-color piping placed subtly around the collar or sleeves. <br>A discreet detail that enhances fabric quality and silhouette.<br><br>price : + $ 2400 NTD</div>
+        </div>
+    </div>
+      <button type="button" onclick="previousStep(5)">back</button>
+      <button type="button" onclick="nextStep(6)">next</button>
+    </div>
+
+    <div class="section hidden" id="step6">
+        <h2>5. Button Options</h2>
+        <div class="options-container">
+          <div class="option-card" data-name="button" data-value="350" data-label="Straight Buttons">
+            <img src="assets/blank.jpg" alt="Straight Buttons">
+            <div class="option-label"><h2>Straight Buttons</h2>Traditional straight buttons with clean lines, <br>emphasizing the classic elegance of the qipao.<br><br>price : + $ 350 NTD/ pair</div>
+          </div>
+          <div class="option-card" data-name="button" data-value="800" data-label="Frog Buttons / Decorative Knots">
+            <img src="assets/blank.jpg" alt="Frog Buttons / Decorative Knots">
+            <div class="option-label"><h2>Frog Buttons / Decorative Knots</h2>Handcrafted decorative frog buttons, <br>a signature detail of traditional qipao—ornate, <br>artistic, and culturally rich.<br><br>price : + $ 800 NTD/ pair</div>
+          </div>
+        </div>
+        <button type="button" onclick="previousStep(6)">back</button>
+        <button type="button" onclick="calculateTotal()" style="width: 300px;">View Total Amount</button>
+      </div>
+
+      <div id="summary" class="summary hidden">
+        <h2>Summary of Selections</h2>
+        <ul id="summaryList"></ul>
+        <p class="total" id="result"></p>
+        <button type="button" onclick="resetForm()">Start Over</button>
+      </div>
+      
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  
