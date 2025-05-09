@@ -172,13 +172,6 @@ ul li a:hover{
 .custom a:hover{
     color: #ffffff;
 }
-.hamburger {
-    display: none;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    padding: 20px;
-}
 
 @media only screen and (max-width: 768px) {
     
