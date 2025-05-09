@@ -3,7 +3,7 @@
     padding:0px;
 }
 .header{
-    background-image: url("https://patience-0308.github.io/HWAMEI-HANTANG/assets/homepageimg.jpeg");
+    background-image: url("assets/homepageimg.jpeg");
     background-repeat: no-repeat;
     background-position:100%;
     margin: 0%;
@@ -171,4 +171,133 @@ ul li a:hover{
 }
 .custom a:hover{
     color: #ffffff;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .header {
+        height: auto;
+        background-position: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .header p {
+        font-size: 20px;
+        margin: 30px auto;
+        line-height: 1.6;
+    }
+
+    .header h6 {
+        font-size: 30px;
+        margin: 30px auto;
+        line-height: 1.0;
+    }
+
+    .header h2 {
+        font-size: 50px;
+        margin: 30px auto 30px;
+        line-height: 1.0;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .icon, .logo {
+        float: left;
+        margin: -80px auto;
+        width: auto;
+        height: 30px;
+    }
+
+    .menu {
+        float: left;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    ul {
+        flex-direction:initial;
+        gap: 15px;
+        padding: 10;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .intro {
+        height: auto;
+        padding: 40px 20px;
+        background-color: #dfd4c8;
+    }
+
+    .intro p {
+        font-size: 14px;
+        margin: 40px ;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .intro img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .intro h6 {
+        margin: 30px auto;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .custom {
+        margin-top: -50;
+        padding-bottom: 50px ;
+        background-color: #dfd4c8;
+        text-align: center;
+    }
+
+    .custom p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-top: 0px;
+        margin-left: -100px;
+        margin-bottom: 20px;
+        margin-right: 100px;
+        text-align: left;
+    }
+
+    .custom h2 {
+        font-size: 30px;
+        margin: 30px auto;
+    }
+
+    .custom h6 {
+        font-size: 40px;
+        margin-top: 80px;
+        margin-left: -300px;
+        margin-bottom: 20px;
+        text-align: center;
+        float: left;
+    }
+
+    .custom a {
+        font-size: 22px;
+        display: inline-block;
+        margin-top: -80px;
+        margin-bottom: 100px;
+    }
 }

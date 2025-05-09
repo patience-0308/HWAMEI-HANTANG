@@ -49,7 +49,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     width: 100px;
     height: 40px;
-    padding: 10px 30px 10px 30px;
   }
   
   button:hover {
@@ -114,7 +113,7 @@ body {
   
   /* 總額和選項明細樣式 */
   .summary {
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.47);
     padding:50px 200px 50px 200px;
     margin-top: 20px;
     font-size: 30px;
@@ -249,7 +248,7 @@ body {
 .menu ul li a{
     text-decoration: none;
     color: #4d4d4dcf;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     transition: 0.4s ease-in-out;
     font-size: 14px;
 
@@ -259,3 +258,124 @@ body {
     text-decoration: underline;
     color: #838383cf;
 }
+
+@media only screen and (max-width: 600px){
+
+    body {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  
+    h1 {
+      text-align: center;
+      padding: 20px 10px 0;
+      margin: 0;
+      font-size: 36px;
+    }
+  
+    form {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .options-container {
+      gap: 20px;
+      padding: 0 10px;
+      margin: 100px;
+    }
+  
+    .option-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .option-card img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto 10px;
+    }
+  
+    .option-label {
+      font-size: 16px;
+    }
+  
+    button {
+      margin: 40px auto;
+      display: block;
+      width: 80%;
+      height: 45px;
+      font-size: 20px;
+    }
+  
+    .summary {
+      padding: 30px 20px;
+      font-size: 18px;
+      margin: 60px;
+    }
+  
+    .summary-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+  
+    .total {
+      text-align: right;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  
+    .header {
+      height: auto;
+      background-position: center;
+      text-align: center;
+      padding: 40px 20px;
+  }
+
+  .header p {
+      font-size: 14px;
+      margin: 30px auto;
+      line-height: 1.6;
+  }
+
+
+
+  .navbar {
+      width: 100%;
+      height: auto;
+      padding: 20px 10px;
+      text-align: center;
+  }
+
+  .icon, .logo {
+      float: left;
+      margin: -80px auto;
+      width: auto;
+      height: 30px;
+  }
+
+  .menu {
+      float: left;
+      margin: 10px auto;
+      width: 100%;
+  }
+
+  ul {
+      flex-direction:initial;
+      gap: 15px;
+      padding: 10;
+  }
+
+  ul li {
+      margin: 10px 0;
+  }
+  }
+  
