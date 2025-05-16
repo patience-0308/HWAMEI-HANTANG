@@ -114,7 +114,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 function saveSelection() {
-  const name = document.getElementById("saveBtn").value.trim();
+  const name = document.getElementById("username").value.trim();
   if (!name) {
     alert("請輸入名字！");
     return;
@@ -177,3 +177,4 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 document.getElementById('resetBtn').addEventListener('click', () => {
   resetForm();
 });
+document.getElementById('saveBtn').addEventListener('click', saveBtn);
