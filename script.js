@@ -145,3 +145,47 @@ summaryList.appendChild(li);
   document.getElementById('summary').classList.remove('hidden');
   document.querySelector(`#step6`).classList.add('hidden');
 }
+ // ✅ 使用你的 Firebase 設定碼
+ const firebaseConfig = {
+  apiKey: "AIzaSyB07VZNn1x58DI4fU8RiOsb1zj3xUtK7JQ",
+  authDomain: "qipao-project.firebaseapp.com",
+  databaseURL: "https://qipao-project-default-rtdb.firebaseio.com",
+  projectId: "qipao-project",
+  storageBucket: "qipao-project.firebasestorage.app",
+  messagingSenderId: "746621216525",
+  appId: "1:746621216525:web:692072a88f46431cc77244",
+  measurementId: "G-BB5DRMH1W0"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// 儲存資料
+function saveSelection() {
+  const name = document.getElementById("username").value.trim();
+  const choice = document.getElementById("qipaoOption").value;
+  if (!name) {
+    alert("請輸入名字！");
+    return;
+  }
+  db.ref("users/" + name).set({
+    qipao: choice,
+    time: new Date().toISOString()
+  });
+  document.getElementById("savedSelection").innerText = `已儲存：${choice}`;
+}
+
+// 讀取資料
+document.getElementById("username").addEventListener("blur", function () {
+  const name = this.value.trim();
+  if (!name) return;
+  db.ref("users/" + name).once("value").then(snapshot => {
+    const data = snapshot.val();
+    if (data && data.qipao) {
+      document.getElementById("savedSelection").innerText = `上次選擇：${data.qipao}`;
+      document.getElementById("qipaoOption").value = data.qipao;
+    } else {
+      document.getElementById("savedSelection").innerText = "尚未有紀錄";
+    }
+  });
+});
