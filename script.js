@@ -166,7 +166,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
   if (action === 'next') {
     nextStep(currentStep + 1);
   } else if (action === 'submit') {
-    saveBtn();
+    saveSelection();
   }
 });
 
