@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>旗袍訂製網站</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <div class="header">
@@ -20,11 +19,10 @@
             </div> 
         </div>
     </div>
-    <h2>歡迎光臨旗袍網站</h2>
 
-  <label for="username">請輸入您的名字：</label>
-  <input type="text" id="username" placeholder="請輸入名字" />
-  <button id="saveBtn">儲存</button>
+  <label for="username" style="margin-left: 23%;font-size: 40px;">Please enter your name:</label>
+  <input type="text" id="username" class="login-input"placeholder="Your name." style="margin-top: 60px;"/>
+  <button id="saveBtn" style="float: none;margin-left: 43%;margin-top: -0px;width: 200px;background-color: #80002f;color: white;">save</button>
 
       
   <h1>Custom-made Cheongsam</h1>
@@ -47,14 +45,14 @@
     <div class="section hidden" id="step2">
       <h2>2. Length</h2>
       <div class="options-container">
-        <div class="option-card" data-name="length" data-value="7500" data-label="Long">
+        <div class="option-card" data-name="length" data-value="0" data-label="Long">
           <img src="assets/blank.jpg" alt="Long">
           <div class="option-label" ><h2>Long</h2>Elegant and graceful, the long qipao <br>(also known as the full-length qipao)
             is a timeless classic that exudes sophistication. <br>Its elongated silhouette enhances 
             the natural curves of the body <br>and creates a poised, <br>statuesque look — perfect 
             for formal occasions <br>such as weddings, banquets, or cultural celebrations.</div>
         </div>
-        <div class="option-card" data-name="length" data-value="7000" data-label="Short">
+        <div class="option-card" data-name="length" data-value="0" data-label="Short">
           <img src="assets/blank.jpg" alt="Short" >
           <div class="option-label"><h2>Short</h2>Chic and modern, <br>the short qipao offers a playful twist on tradition. <br>
             With a hemline above the knee or mid-thigh, <br>it provides ease of movement <br>and a youthful charm, 
@@ -165,10 +163,9 @@
       </div>
       
   </form>
+  <script src="script.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-  <script src="script.js"></script>
-
 </body>
 </html>
 
